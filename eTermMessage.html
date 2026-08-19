@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>eTermлϢ8</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<style type='text/css'> 
+a { text-decoration: none } 
+a:link { color:#060082 } 
+a:visited {color:#060082}
+input {
+	font-family: ̎ͥ , т̎ͥ , ԗԲ , e˩ ;
+	font-size: 1em; 
+}
+body {
+	font-family: ̎ͥ , т̎ͥ , ԗԲ , e˩ ;
+	background-color: white ;
+}
+</style>
+</head>
+  
+<body style="background-color: lightgray; ">
+
+<script type="text/javascript" >
+var userAgent = navigator.userAgent;
+var opera = (userAgent.indexOf('Opera') != -1);
+var ie = (userAgent.indexOf('MSIE') != -1);
+var gecko = (userAgent.indexOf('Gecko') != -1);
+var oldnetscape = (userAgent.indexOf('Mozilla') != -1);
+</script>
+
+
+<div style="width: 100%; overflow:hidden; background-color:white; position:absolute; left: 10 ; top: 2 ;" 
+id="message_area" onmouseover="clear_step()" 
+onmouseout="resume_step()" >
+
+<div style="white-space:nowrap; position: relative; left:0; font-weight: bold; "  id="message_line"><span id='hint.hotel.1291244156'><a href=http://10.6.159.135:8910/tas/demo/eTermRight.jsp>1291244156订单AC2D9L等待支付你好您好您好您好好哈哈哈哈哈哈哈</a><a style='color: #911;' href="javascript:remove_hint('hint.hotel.1291244156')">╳</a>&nbsp;&nbsp;</span></div> 
+</div>
+<script type="text/javascript">
+function remove_hint ( node_id ) {
+	var ele = document.getElementById(node_id) ;
+	var parent = ele.parentNode ;
+	parent.removeChild(ele) ;
+}
+
+function clear_step() {
+	step = 0 ;
+} 
+
+function resume_step() {
+	step = step_set ;
+} 
+
+function move_left() {
+	var ml =  document.getElementById("message_line") ;
+	left -= step ;
+	ml.style.left = left;
+	if (ie) {
+		var sw = document.getElementById("message_line").scrollWidth  ;
+		if ((left<0) && (sw+left)<200) {
+			var aw = document.getElementById("message_area").clientWidth ;
+			left = aw / 2;
+			if ((sw<=aw)) {
+				step_set = 0 ;
+				step = step_set ; 
+				left = 0 ;
+			}
+		}
+	} else { 
+		var sw = document.getElementById("message_area").scrollWidth  ;
+		var cw = document.getElementById("message_area").clientWidth ;
+		if ((left+sw)<-200) left = cw / 2 ;
+		if (left>-5 && left<10) {
+			if (sw<=cw) {
+				step_set = 0 ;
+				left = 0 ;
+				step = step_set ;
+			}
+		}
+	}
+
+} 
+
+function move_right() {
+	var ml =  document.getElementById("message_line") ;
+	left += 20 ;
+	ml.style.left = left; 
+	show_width("message_area") ; 
+	show_width("message_line") ; 
+
+	spele = document.getElementById("message_line_left");
+	spele.innerHTML=left ; 
+} 
+
+var left = document.getElementById("message_area").clientWidth  / 2 ;
+var step_set = 2 ;
+if (ie) {
+	var sw = document.getElementById("message_line").scrollWidth ;
+	var aw = document.getElementById("message_area").clientWidth ;
+	if ((sw<=aw)) {
+		step_set = 0 ;
+		left = 0 ;
+	}
+} else { 
+	var sw = document.getElementById("message_area").scrollWidth ;
+	var cw = document.getElementById("message_area").clientWidth ;
+	if (sw<=cw) {
+		step_set = 0 ;
+		left = 0 ;
+	}
+}
+var step = step_set ; 
+
+stopIt=setInterval("move_left()",100);
+
+
+</script>
+
+</body>
+</html>
+

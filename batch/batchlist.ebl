@@ -1,0 +1,20 @@
+HELP:要查询的指令==>Ctrl+F1
+SI:工作号/密码（请补充）==>Ctrl+F2
+快速订位(请补充office号)==>Ctrl+F3
+国内证件信息==>Ctrl+F4
+国际证件信息==>Ctrl+F5
+EI签注1==>Ctrl+F6
+EI签注2==>Ctrl+F7
+伪出票时限（请补充office号）==>Ctrl+F8
+取消PNR==>Ctrl+F9
+PAT:A==>Ctrl+F10
+QTE==>Ctrl+0
+XS FSQ==>Ctrl+1
+DSFQ自动生成FN/FC==>Ctrl+2
+随时查看SIGN-IN信息==>Ctrl+3
+测试上票==>Ctrl+4
+退测试票==>Ctrl+5
+undefined==>Ctrl+6
+undefined==>Ctrl+7
+undefined==>Ctrl+8
+undefined==>Ctrl+9
